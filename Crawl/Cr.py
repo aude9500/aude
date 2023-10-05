@@ -19,10 +19,10 @@ def driversetting(Path):    #무슨 파일 받는지 모르니깐 청소를 해�
 
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
-    driver = webdriver.Chrome(executable path=pa.CHROME_DRIVER_PATH, options=options)
+    driver = webdriver.Chrome(executable_path=pa.CHROME_DRIVER_PATH, options=options)
     driver.implicitly_wait(waitseconds)
 
-    return[]
+    return driver
 
 def gen(TargetDay,Farm,Method):
     DownloadPath = r"\Users\aude3\Downloads\Advanced"
